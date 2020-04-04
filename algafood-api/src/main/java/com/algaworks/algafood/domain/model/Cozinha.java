@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "TAB_COZINHAS")
+@Table(name = "TB_COZINHA")
 public class Cozinha {
 
 	@EqualsAndHashCode.Include
@@ -21,6 +21,6 @@ public class Cozinha {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="NOME")
+	@Column(name="NOME", nullable = false)
 	private String nome;
 }
